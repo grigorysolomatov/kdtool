@@ -18,9 +18,6 @@ python kd.py make-w \
      --wmin 313 \
      --wmax 765 \
      --num 200 \
-
-python kd.py make-w \
-     --w testdata/intermediate/w1.csv \
     
 python kd.py make-tz \
         --tz testdata/intermediate/tz.csv \
@@ -39,12 +36,6 @@ python kd.py eval-poly \
        --w testdata/intermediate/w.csv \
        --tz testdata/intermediate/tz.csv \
        --vals testdata/intermediate/vlEr.csv \
-
-python kd.py eval-poly \
-       --poly testdata/intermediate/plEr.npz \
-       --w testdata/intermediate/w1.csv \
-       --tz testdata/intermediate/tz.csv \
-       --vals testdata/intermediate/vlEr1.csv \
 
 python kd.py heatmap \
        --vals testdata/intermediate/vlEr-noisy.csv \
